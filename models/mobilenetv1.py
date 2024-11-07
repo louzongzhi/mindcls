@@ -6,9 +6,9 @@ Refer to MobileNets: Efficient Convolutional Neural Networks for Mobile Vision A
 import mindspore.common.initializer as init
 from mindspore import Tensor, nn
 
-from .helpers import load_pretrained
-from .layers.pooling import GlobalAvgPooling
-from .registry import register_model
+from mindcv.models.helpers import load_pretrained
+from mindcv.models.layers.pooling import GlobalAvgPooling
+from mindcv.models.registry import register_model
 
 __all__ = [
     "MobileNetV1",

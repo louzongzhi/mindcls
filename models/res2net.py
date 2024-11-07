@@ -9,10 +9,10 @@ from typing import List, Optional, Type
 import mindspore.common.initializer as init
 from mindspore import Tensor, nn, ops
 
-from .helpers import load_pretrained
-from .layers.compatibility import Split
-from .layers.pooling import GlobalAvgPooling
-from .registry import register_model
+from mindcv.models.helpers import load_pretrained
+from mindcv.models.layers.compatibility import Split
+from mindcv.models.layers.pooling import GlobalAvgPooling
+from mindcv.models.registry import register_model
 
 __all__ = [
     "Res2Net",

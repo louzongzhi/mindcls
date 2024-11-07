@@ -8,10 +8,10 @@ import math
 import mindspore.common.initializer as init
 from mindspore import Tensor, nn
 
-from .helpers import build_model_with_cfg, make_divisible
-from .layers.compatibility import Dropout
-from .layers.pooling import GlobalAvgPooling
-from .registry import register_model
+from mindcv.models.helpers import build_model_with_cfg, make_divisible
+from mindcv.models.layers.compatibility import Dropout
+from mindcv.models.layers.pooling import GlobalAvgPooling
+from mindcv.models.registry import register_model
 
 __all__ = [
     "MobileNetV2",

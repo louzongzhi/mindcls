@@ -11,13 +11,13 @@ from mindspore import Tensor, nn
 from mindspore.common import initializer as weight_init
 from mindspore.common.initializer import Normal, Uniform
 
-from .helpers import build_model_with_cfg, make_divisible
-from .layers.activation import Swish
-from .layers.compatibility import Dropout
-from .layers.drop_path import DropPath
-from .layers.pooling import GlobalAvgPooling
-from .layers.squeeze_excite import SqueezeExcite
-from .registry import register_model
+from mindcv.models.helpers import build_model_with_cfg, make_divisible
+from mindcv.models.layers.activation import Swish
+from mindcv.models.layers.compatibility import Dropout
+from mindcv.models.layers.drop_path import DropPath
+from mindcv.models.layers.pooling import GlobalAvgPooling
+from mindcv.models.layers.squeeze_excite import SqueezeExcite
+from mindcv.models.registry import register_model
 
 __all__ = [
     "EfficientNet",  # registration mechanism to use yaml configuration

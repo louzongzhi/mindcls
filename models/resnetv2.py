@@ -7,9 +7,9 @@ from typing import Optional
 
 from mindspore import Tensor, nn
 
-from .helpers import load_pretrained
-from .registry import register_model
-from .resnet import ResNet
+from mindcv.models.helpers import load_pretrained
+from mindcv.models.registry import register_model
+from mindcv.models.resnet import ResNet
 
 __all__ = [
     "resnetv2_50",

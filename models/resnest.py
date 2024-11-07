@@ -8,11 +8,11 @@ from typing import List, Optional, Type
 import mindspore.common.initializer as init
 from mindspore import Tensor, nn, ops
 
-from .helpers import build_model_with_cfg, make_divisible
-from .layers.compatibility import Dropout
-from .layers.identity import Identity
-from .layers.pooling import GlobalAvgPooling
-from .registry import register_model
+from mindcv.models.helpers import build_model_with_cfg, make_divisible
+from mindcv.models.layers.compatibility import Dropout
+from mindcv.models.layers.identity import Identity
+from mindcv.models.layers.pooling import GlobalAvgPooling
+from mindcv.models.registry import register_model
 
 __all__ = [
     "ResNeSt",

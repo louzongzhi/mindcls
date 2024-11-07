@@ -9,9 +9,9 @@ from typing import Dict, List, Union
 import mindspore.common.initializer as init
 from mindspore import Tensor, nn
 
-from .helpers import load_pretrained
-from .layers.compatibility import Dropout
-from .registry import register_model
+from mindcv.models.helpers import load_pretrained
+from mindcv.models.layers.compatibility import Dropout
+from mindcv.models.registry import register_model
 
 __all__ = [
     "VGG",
